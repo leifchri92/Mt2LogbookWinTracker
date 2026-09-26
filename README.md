@@ -1,1 +1,3 @@
-# Mt2LogbookWinTracker
+# LogbookWinTracker
+
+Short description of your mod

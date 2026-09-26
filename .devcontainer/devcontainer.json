@@ -1,0 +1,18 @@
+{
+  "name": "C# (.NET)",
+  "build": { "dockerfile": "Dockerfile" },
+  "postCreateCommand": "git lfs uninstall || true && rm -f .git/hooks/pre-push && dotnet nuget update source --username $GITHUB_USER --password $GH_AUTH_TOKEN monster-train-packages --store-password-in-clear-text && dotnet restore",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csdevkit"],
+      "settings": {
+        "dotnet.defaultSolution": "**/*.sln",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "remoteUser": "vscode"
+}

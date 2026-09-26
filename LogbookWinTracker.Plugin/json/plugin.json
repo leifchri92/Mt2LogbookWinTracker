@@ -1,0 +1,49 @@
+{
+    "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+    "cards": [
+        {
+            "id": "StarterFireStarter",
+            "override": "replace",
+            "cost": 0,
+            "names": {
+                "english": "Gas Cannister",
+                "chinese": "气罐",
+                "french": "Le Starter of Fire"
+            },
+            "descriptions": {
+                "english": "Deal [effect0.power] damage",
+                "chinese": "造成 [effect0.power] 点伤害。",
+                "french": "Inflige <nobr>[effect0.power] DGT</nobr>"
+            },
+            "card_art": "@Gasoline",
+            "effects": ["@DealFiveDamage"],
+            "traits": ["@Consume"]
+        }
+    ],
+    "sprites": [
+        {
+            "id": "Gasoline",
+            "path": "textures/card_art/gas.png"
+        }
+    ],
+    "game_objects": [
+        {
+            "id": "Gasoline",
+            "type": "card_art",
+            "extensions": {
+                "card_art": {
+                    "sprite": "@Gasoline"
+                }
+            }
+        }
+    ],
+    "effects": [
+        {
+            "id": "DealFiveDamage",
+            "name": "CardEffectDamage",
+            "target_mode": "drop_target_character",
+            "target_team": "both",
+            "param_int": 5
+        }
+    ]
+}
