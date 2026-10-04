@@ -1,0 +1,11 @@
+{
+  "name": "Logbook_Win_Tracker",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/leifchri92/Mt2LogbookWinTracker",
+  "description": "Add trackers for Covenant 10 and Titan clan combination wins to the Logbook.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "MT2-Trainworks_Reloaded-0.7.2",
+    "Conductor-Conductor-0.4.1"
+  ]
+}
